@@ -1,0 +1,79 @@
+{
+  "paths": {
+    "source_root": "/Users/searchpcc/opt/github/tinynookbigjoy/Blog-source",
+    "backup_root": "/Users/searchpcc/opt/github/tinynookbigjoy/Blog",
+    "source_dirs": {
+      "posts": "content/posts",
+      "reads": "content/reads",
+      "weeks": "content/weeks",
+      "pics": "static/pics"
+    },
+    "target_dirs": {
+      "posts": "Posts",
+      "reads": "Reads",
+      "weeks": "Weeks",
+      "pics": "Static/pics"
+    }
+  },
+  "filters": {
+    "ignore_files": [
+      "20200202_article-template.md",
+      "_index.md"
+    ],
+    "markdown_extensions": [
+      ".md",
+      ".markdown",
+      ".mdx"
+    ]
+  },
+  "readme": {
+    "title": "喜隅-小隅大欢喜",
+    "categories": {
+      "posts": {
+        "name": "文章",
+        "order": 1
+      },
+      "weeks": {
+        "name": "周刊",
+        "order": 2
+      },
+      "reads": {
+        "name": "阅读",
+        "order": 3
+      }
+    },
+    "date_format": "YYYY-MM-DD"
+  },
+  "images": {
+    "supported_formats": [
+      ".jpg",
+      ".jpeg",
+      ".png",
+      ".webp",
+      ".gif",
+      ".svg"
+    ],
+    "path_patterns": [
+      "/pics/",
+      "/static/pics/"
+    ]
+  },
+  "path_corrections": {
+    "images": {
+      "from_patterns": [
+        "/pics/",
+        "/static/pics/"
+      ],
+      "to_pattern": "/Static/pics/"
+    },
+    "articles": {
+      "posts": "/Posts/",
+      "reads": "/Reads/",
+      "weeks": "/Weeks/"
+    }
+  },
+  "logging": {
+    "verbose": true,
+    "show_stats": true
+  }
+}
